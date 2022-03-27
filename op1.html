@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>open</title>
+</head>
+<body>
+
+	<div id="banner" onclick="audio.play();">
+       
+    <div class="video">
+    	<video width="100%" height="600px" autoplay muted>
+    		<source src="tmkoc.mp4" type="video/mp4">
+    	</video>
+
+        <p>Click the display</p>
+    </div>
+        
+     
+</div>
+
+<style>
+        body{
+                background: black;
+        }
+        #banner { 
+                background: url(img/library-img.jpg) no-repeat center 0; 
+                background-size: cover; 
+                height: 700px; 
+                border: solid 3px #006baf; 
+                text-align: center;
+                position: relative;  
+                overflow: hidden;
+
+        }
+       p{
+        color: ghostwhite;
+       }
+
+        button{
+                font-size: 20px;
+                background: #111;
+                cursor: pointer;
+              
+        } 
+
+       
+        
+        @media (max-width: 404px){
+
+    .video{
+height: 100%;
+width: 100%;
+background: black;
+
+}
+
+}
+        </style>   
+
+<script type="text/javascript">
+	const audio = new Audio();
+	audio.src = "tt.mpeg"
+      
+</script> 
+</body>
+</html>

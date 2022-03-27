@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>open</title>
+</head>
+<body>
+
+	<div id="banner" onclick="audio.play();">
+        <div class="doorHoverLeft"><span class="doorText">Wel<br>Come Again<br>😨 </span></div>
+        <div class="doorHoverRight" ><span class="doorText">स्वागत <br>हे<br>🔊</span></div>
+
+    <div class="video">
+    	<video width="100%" height="600px" autoplay muted>
+    		<source src="v2.mp4" type="video/mp4">
+    	</video>
+         <p>Click the display</p>
+        <a href="op1.html"><button>➡</button></a>
+    </div>
+        
+     
+</div>
+
+<style>
+        body{
+                background: black;
+        }
+        #banner { 
+                background: url(img/library-img.jpg) no-repeat center 0; 
+                background-size: cover; 
+                height: 700px; 
+                border: solid 3px #006baf; 
+                text-align: center;
+                position: relative;  
+                overflow: hidden;
+
+        }
+        p{
+                color: ghostwhite;
+        }
+        .doorText { 
+                 
+                color: ghostwhite; 
+                font-family: monospace;
+                font-size: 28px; 
+                font-weight: bold; 
+                line-height: 45px; 
+                height: 45px; 
+          
+                position: absolute; 
+                top: 50%;  
+                padding: 0 0 0 20px; 
+                left: 1px; 
+                right: 1px; 
+                margin-top: -22.5px; 
+                text-shadow: 0 1px 1px rgba(255,255,255,0.25); 
+        }
+        .doorHoverLeft { 
+                position: absolute; 
+                left: 0%; 
+                top: 0; 
+                bottom: 0; 
+                width: 50%; 
+                transition: 3s ease-in-out; 
+                box-shadow: inset 0 0 0 1px rgba(0,0,0,0.40); 
+                background: url(eye.gif); 
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                
+        }
+        .doorHoverRight { 
+                position: absolute; 
+                right: 0%; 
+                top: 0; 
+                bottom: 0; 
+                width: 50%; 
+                transition: 3s ease-in-out; 
+                box-shadow: inset 0 0 0 1px rgba(0,0,0,0.40); 
+                background: url(aa.gif); 
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+               
+        }
+        #banner:hover .doorHoverLeft { 
+                left: -50%; 
+        }
+        #banner:hover .doorHoverRight { 
+                right: -50%; 
+        }
+
+        button{
+                font-size: 20px;
+                background: #111;
+                cursor: pointer;
+              
+        } 
+
+       
+        
+        @media (max-width: 404px){
+
+    .video{
+height: 100%;
+width: 100%;
+background: black;
+
+}
+
+}
+        </style>   
+
+<script type="text/javascript">
+	const audio = new Audio();
+	audio.src = "aaa.mp3"
+      
+</script> 
+</body>
+</html>
